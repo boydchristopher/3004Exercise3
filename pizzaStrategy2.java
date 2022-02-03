@@ -10,6 +10,8 @@ public class pizzaStrategy2 implements PizzaStrategy
 
 		p.table.served.add(p);
 
+		p.cost = 15;
+
 		return true;
 	}
 

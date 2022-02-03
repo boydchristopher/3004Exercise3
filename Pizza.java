@@ -10,12 +10,12 @@ public String crust;
 public ArrayList<String> toppings=new ArrayList<String>();
 public int cost;
 
-public Pizza(PizzaStrategy strategy, String size, String crust, Table t, int c) {
+public Pizza(PizzaStrategy strategy, String size, String crust, Table t) {
 	
 	this.size = size;
 	this.crust = crust;
 	this.table = t;
-	this.cost = c;
+	this.cost = 0;
 	//hint: missing code here to order via the pizza strategy
 	strategy.order(this);
 }
